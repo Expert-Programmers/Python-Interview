@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pythonic</title>
+    <style>
+        html body {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <table border="1px">
+        <tr>
+            <td>去除list中重复元素</td>
+            <td>
+            <pre><code>def remove_repeating_elements(l: list) -> list:
+    return list(set(l))
+
+
+def remove_repeating_elements_(l: list) -> list:
+    d = {}
+    for e in l:
+        d[e] = 1
+    return list(d.keys())
+
+
+if __name__ == '__main__':
+    l = [1, 1, 2, 3, 2, 3, 1, 1]
+    print(remove_repeating_elements(l))
+    print(remove_repeating_elements_(l))</code></pre>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
